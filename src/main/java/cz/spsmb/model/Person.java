@@ -20,7 +20,7 @@ public class Person implements Serializable {
     @OneToMany(mappedBy="person")
     List<Gun> guns;
     @OneToMany(mappedBy="person")
-    List<Car> cars;
+    List<Car> cars = new ArrayList<>();
 
     public List<Gun> getGuns() {
         return guns;
@@ -55,6 +55,8 @@ public class Person implements Serializable {
     public void setId(long id) {
         this.id = id;
     }
+
+
 
     public String getName() {
         return name;

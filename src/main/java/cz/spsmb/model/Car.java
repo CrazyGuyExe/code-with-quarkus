@@ -32,7 +32,7 @@ public class Car implements Serializable {
 
     ;
 
-    public Car(String brand, String model, Integer year) {
+    public Car(String brand, String model,Integer year) {
         this.brand = brand;
         this.model = model;
         this.year = year;

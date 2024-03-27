@@ -2,6 +2,7 @@ package cz.spsmb.dao;
 
 import cz.spsmb.model.Car;
 
+import io.quarkus.hibernate.orm.panache.Panache;
 import io.quarkus.hibernate.orm.panache.PanacheRepository;
 import jakarta.enterprise.context.ApplicationScoped;
 
@@ -16,4 +17,7 @@ public class CarRepository implements PanacheRepository<Car> {
     public Car listById(Long id){
         return findById(id);
     }
+
+
+
 }
